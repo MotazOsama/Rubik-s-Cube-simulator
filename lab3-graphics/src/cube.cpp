@@ -7,7 +7,7 @@
 
 #include "cube.h"
 using namespace std;
-const GLfloat side = 2.0f;
+const GLfloat side = 2.9f;
 GLuint indices[] = { 0, 1, 3, 2, 4, 5, 7, 6, 6, 5, 2, 1, 7, 6, 3, 2, 7, 4, 3, 0,
 		4, 5, 0, 1 };
 GLuint color_loc;
@@ -21,6 +21,7 @@ const vec3 yellow = vec3(1.0, 1.0, 0.0);
 cube::cube() {
 	// TODO Auto-generated constructor stub
 }
+
 void cube::createCube(GLuint program, GLfloat centerx, GLfloat centery,
 		GLfloat centerz, GLint r, GLint c, GLint n) {
 	create_cube(centerx, centery, centerz);
